@@ -27,7 +27,6 @@ function App() {
   const handleConfirm = () => {
     const message = `Hi ${name}, thank you for purchasing from *Burly* at the Weekend Bazaar!
 
-
 We’re excited to have you with us and hope you loved your purchase.
 Your order: *${order.join(', ')}*
 
