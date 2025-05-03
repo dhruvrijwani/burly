@@ -25,16 +25,22 @@ function App() {
   ];
 
   const handleConfirm = () => {
-    const message = `Hi ${name}, thank you for purchasing from *Burly* at the Urban Flee!
+    const message = `Hi ${name}, thank you for purchasing from *Burly* at the Weekend Bazaar!
 
-We are thrilled to have you as part of the Burly family.
-Your order details: *${order.join(', ')}*
 
-In the meantime, don't forget to visit our website: https://burlyindia.com
-Follow us on Instagram for more updates: @burlyindia
+We’re excited to have you with us and hope you loved your purchase.
+Your order: *${order.join(', ')}*
 
-Thank you for choosing Burly!
-– Team Burly`;
+We handpick every product to bring you unique finds and great deals every weekend!
+
+Check out more on our website: https://burlyindia.com/  
+Follow us on Instagram for the latest arrivals and updates: https://www.instagram.com/burlyindia/
+
+Thanks for being part of the Burly family!  
+– Team Burly;`
+
+
+
 
     const whatsappURL = `https://wa.me/91${number}?text=${encodeURIComponent(message)}`;
     window.location.href = whatsappURL;
@@ -107,15 +113,18 @@ Thank you for choosing Burly!
           <h2>Confirm Your Order</h2>
           <p><strong>Message Preview:</strong></p>
           <pre className="preview">
-Hi {name}, thank you for purchasing from Burly at the Urban Flee!
+Hi ${name}, thank you for purchasing from *Burly* at the Weekend Bazaar!
 
-We are thrilled to have you as part of the Burly family.
-Your order details: {order.join(', ')}
+We’re excited to have you with us and hope you loved your purchase.
+Your order: *${order.join(', ')}*
 
-Visit us: https://burlyindia.com
-Instagram: @burlyindia
+We handpick every product to bring you unique finds and great deals every weekend!
 
-– Team Burly
+Check out more on our website: https://burlyindia.com/  
+Follow us on Instagram for the latest arrivals and updates: https://www.instagram.com/burlyindia/
+
+Thanks for being part of the Burly family!  
+– Team Burly;
           </pre>
           <button onClick={handleConfirm}>Confirm Order Details</button>
         </div>
