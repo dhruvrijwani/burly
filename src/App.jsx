@@ -20,7 +20,7 @@ function App() {
     'La Flor',
     'Sandalwood',
     'Dark Passion',
-    'Burly Gift Set',
+    'Signature Gift Set',
     'Golden Nights'
   ];
 
